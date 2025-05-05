@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Nilima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        #main {
+            display: none;
+        }
+        #initial {
+            margin-top: 100px;
+        }
+        #symbol {
+            font-size: 5em; /* Symbol ta boro dekhabe */
+            color: #ff4d4d;
+        }
+        #startButton {
+            margin-top: 20px;
+            font-size: 1em; /* Button ta choto rakha hoyeche */
+            padding: 8px 16px;
+            color: #fff;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        h1 {
+            color: #ff4d4d;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        .intro-message, .footer, .final-line {
+            margin: 20px;
+            font-size: 1.2em;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .gif {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Initial Display -->
+    <div id="initial">
+        <div id="symbol">S 💖 N</div>
+        <button id="startButton" onclick="startLove()">ভালোবাসাকে ছুঁয়ে দাও</button>
+    </div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main">
+        <h1>I Love You Nilima</h1>
+        <div class="intro-message">
+           ভালোবাসা – এক অমূর্ত ধারণা, যা কবিতা, গান, গল্পে বারবার বর্ণিত হয়েছে। কিন্তু সত্যিকারের ভালোবাসা কী?<br>
+            কেবল তীব্র আবেগ, রোমাঞ্চ, প্রতিশ্রুতির বন্ধন? না, এর চেয়ে অনেক বেশি। সত্যিকারের ভালোবাসা হচ্ছে নিঃস্বার্থ আত্মদান<br>
+            
+            এতে থাকে না কোনো শর্ত, কোনো প্রত্যাশা। প্রিয়জনের সুখেই নিজের সুখ খুঁজে পায় ভালোবাসার মানুষ।।<b>
+            যতবার এই ছবি গুলো দেখি, তোমার প্রেমে আবার নতুন করে পড়ি।<br>
+            
+        </div>
+        <div class="gallery">
+            <img src="https://i.postimg.cc/RhrJxQ80/1746435338786.jpg" alt="Memory 1">
+            <img src="https://i.postimg.cc/j2zwxn04/1746435342424.jpg" alt="Memory 2">
+            <img src="https://i.postimg.cc/yYH3fjcQ/1746435347130.jpg" alt="Memory 3">
+            <img src="https://i.postimg.cc/gkHX1hKY/1746435353631.jpg" alt="Memory 4">
+        </div>
+
+        <div class="final-line">সব কিছু ভুলে গিয়ে আমার এই ফুল আর ভালোবাসাকে গ্রহণ করে নাও, প্রিয় 🥰</div>
+
+        <div class="gif">
+            <img src="https://media1.tenor.com/m/diPTztdLHzoAAAAd/love-forever.gif" alt="Love Forever GIF" width="200">
+        </div>
+    </div>
+
+    <!-- Background music (MP3) -->
+    <audio id="myAudio" loop>
+        <source src="https://wapking.pro/siteuploads/files/sfd46/22959/Benche%20Theke%20Labh%20Ki%20Bol-Arijit%20Singh(MyMp3Song).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function startLove() {
+            // Show main content and play audio
+            document.getElementById("initial").style.display = "none";
+            document.getElementById("main").style.display = "block";
+            var audio = document.getElementById("myAudio");
+            audio.currentTime = 95; // Start at 1 minute 35 seconds
+            audio.play();
+        }
+    </script>
+</body>
+</html>
